@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IN PROGRESS
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+This Spotify clone application is a replica of the Spotify platform, which allows users to listen to their favorite music. This application is built using the React library and Next.js framework, which are tools for building modern web applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Demo and Video link
+
+IN PROGRESS
+
+## Requirements
+
+To run the Spotify Clone application on your local development environment, you need to have the following tools installed:
+
+- Node.js (version 14 or higher)
+- npm (Node Package Manager) or yarn
+
+#### Major Technologies
+
+- TypeScript + JavaScript
+- React
+- NextJS
+- TailwindCSS
+
+#### Libraries
+
+- React Icons
+- Tailwind Merge
+
+## Installation
+
+After cloning this repository, follow these steps to install all dependencies:
+
+Open a terminal and navigate to the project's root directory.
+
+Run the following command:
+
+```console
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```console
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Configuration
 
-## Learn More
+IN PROGRESS
 
-To learn more about Next.js, take a look at the following resources:
+## Running
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the application on your local development environment, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Open a terminal and navigate to the project's root directory.
 
-## Deploy on Vercel
+2. Run the following command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```console
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+or
+
+```console
+yarn dev
+```
+
+3. After successful startup, open your browser and go to http://localhost:3000 to access the application.
