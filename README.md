@@ -19,12 +19,14 @@ To run the Spotify Clone application on your local development environment, you 
 
 - TypeScript + JavaScript
 - React
-- NextJS
 - TailwindCSS
+- NextJS
+- Supabase
 
 #### Libraries
 
 - React Icons
+- Stripe
 - Tailwind Merge
 
 ## Installation
@@ -44,10 +46,6 @@ or
 ```console
 yarn install
 ```
-
-## Configuration
-
-IN PROGRESS
 
 ## Running
 
