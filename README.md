@@ -25,9 +25,11 @@ To run the Spotify Clone application on your local development environment, you 
 
 #### Libraries
 
+- Zustand
 - React Icons
 - Stripe
 - Tailwind Merge
+- Radix UI
 
 ## Installation
 
