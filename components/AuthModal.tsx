@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import useAuthModal from "@/hooks/useAuthModal";
-import Modal from "./Modal";
+import useAuthModal from '@/hooks/useAuthModal';
+import Modal from './Modal';
 import {
   useSessionContext,
   useSupabaseClient,
-} from "@supabase/auth-helpers-react";
-import { Auth } from "@supabase/auth-ui-react";
-import { ThemeSupa } from "@supabase/auth-ui-shared";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+} from '@supabase/auth-helpers-react';
+import { Auth } from '@supabase/auth-ui-react';
+import { ThemeSupa } from '@supabase/auth-ui-shared';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 interface AuthModalProps {}
 
@@ -27,7 +27,7 @@ const AuthModal: React.FunctionComponent<AuthModalProps> = (props) => {
   }, [session, router, onClose]);
 
   const onChange = (open: boolean) => {
-    if (!isOpen) {
+    if (!open) {
       onClose();
     }
   };
@@ -37,18 +37,18 @@ const AuthModal: React.FunctionComponent<AuthModalProps> = (props) => {
       title="Welcome back"
       description="Login to your account"
       isOpen={isOpen}
-      onChange={() => {}}
+      onChange={onChange}
     >
       <Auth
         theme="dark"
         magicLink
-        providers={["github"]}
+        providers={['github']}
         supabaseClient={supabaseClient}
         appearance={{
           theme: ThemeSupa,
           variables: {
             default: {
-              colors: { brand: "#404040", brandAccent: "#22c55e" },
+              colors: { brand: '#404040', brandAccent: '#22c55e' },
             },
           },
         }}
