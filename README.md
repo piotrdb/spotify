@@ -30,6 +30,9 @@ To run the Spotify Clone application on your local development environment, you 
 - Stripe
 - Tailwind Merge
 - Radix UI
+- Hot Toast
+- React Hook Form
+- Uniqid
 
 ## Installation
 

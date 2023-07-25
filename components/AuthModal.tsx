@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 interface AuthModalProps {}
 
-const AuthModal: React.FunctionComponent<AuthModalProps> = (props) => {
+const AuthModal: React.FC<AuthModalProps> = (props) => {
   const supabaseClient = useSupabaseClient();
   const router = useRouter();
   const { session } = useSessionContext();

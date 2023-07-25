@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import AuthModal from "@/components/AuthModal";
-import Modal from "@/components/Modal";
-import { useEffect, useState } from "react";
+import AuthModal from '@/components/AuthModal';
+import UploadModal from '@/components/UploadModal';
+import { useEffect, useState } from 'react';
 
 interface ModalProviderProps {}
 
-const ModalProvider: React.FunctionComponent<ModalProviderProps> = (props) => {
+const ModalProvider: React.FC<ModalProviderProps> = (props) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -20,6 +20,7 @@ const ModalProvider: React.FunctionComponent<ModalProviderProps> = (props) => {
   return (
     <>
       <AuthModal />
+      <UploadModal />
     </>
   );
 };
