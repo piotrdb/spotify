@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import Input from './Input';
 
-type SearchProps = {};
+interface SearchProps {}
 
-const SearchInput: React.FC<SearchProps> = (props) => {
+const SearchInput: React.FC<SearchProps> = () => {
   const router = useRouter();
   const [value, setValue] = useState('');
   const debouncedValue = useDebounce(value, 750);
