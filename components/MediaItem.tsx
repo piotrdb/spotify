@@ -1,13 +1,15 @@
 import useLoadImage from '@/hooks/useLoadImage';
 import { Song } from '@/types';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 interface MediaItemProps {
   song: Song;
   onClick?: (id: string) => void;
+  className?: string;
 }
 
-const MediaItem: React.FC<MediaItemProps> = ({ song, onClick }) => {
+const MediaItem: React.FC<MediaItemProps> = ({ song, onClick, className }) => {
   const imageUrl = useLoadImage(song);
 
   const handleClick = () => {
@@ -19,7 +21,10 @@ const MediaItem: React.FC<MediaItemProps> = ({ song, onClick }) => {
   return (
     <div
       onClick={handleClick}
-      className="flex items-center gap-x-3 cursor-pointer hover:bg-neutral-800/50 w-full p-2 rounded"
+      className={twMerge(
+        'flex items-center gap-x-3 cursor-pointer hover:bg-neutral-800/50 w-full p-2 rounded',
+        className
+      )}
     >
       <div className="relative rounded-md min-h-[48px] min-w-[48px] overflow-hidden">
         <Image src={imageUrl || '/images/liked.png'} alt="Media Item" fill />
