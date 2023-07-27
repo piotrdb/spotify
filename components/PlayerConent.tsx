@@ -16,7 +16,6 @@ interface PlayerContentProps {
 }
 
 const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
-  // hardcoded for now
   const player = usePlayer();
   const [volume, setVolume] = useState(0.1);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -32,12 +31,13 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
     const nextSong = player.ids[currentIndex + 1];
 
     if (!nextSong) {
-      player.setId(player.ids[0]);
+      return player.setId(player.ids[0]);
     }
     player.setId(nextSong);
   };
 
   const onPlayPrev = () => {
+    console.log(player);
     if (player.ids.length === 0) {
       return;
     }
@@ -46,7 +46,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
     const prevSong = player.ids[currentIndex - 1];
 
     if (!prevSong) {
-      player.setId(player.ids[-1]);
+      return player.setId(player.ids[player.ids.length - 1]);
     }
     player.setId(prevSong);
   };
