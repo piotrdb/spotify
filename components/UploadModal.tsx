@@ -133,8 +133,11 @@ const UploadModal: React.FC<UploadModalProps> = (props) => {
             {...register('image', { required: true })}
           />
         </div>
-        <Button disabled={isLoading} type="submit">
+        {/* <Button disabled={isLoading} type="submit">
           {isLoading ? 'Uploading...' : 'Upload'}
+        </Button> */}
+        <Button disabled type="submit">
+          Upload for demo purposes is disabled
         </Button>
       </form>
     </Modal>
