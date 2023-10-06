@@ -33,6 +33,7 @@ To run the Spotify Clone application on your local development environment, you 
 - Hot Toast
 - React Hook Form
 - Uniqid
+- React Spinners
 
 ## Installation
 
