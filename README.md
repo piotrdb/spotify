@@ -2,11 +2,12 @@
 
 ## Project Description
 
-This Spotify clone application is a replica of the Spotify platform, which allows users to listen to their favorite music. This application is built using the React library and Next.js framework, which are tools for building modern web applications.
+This Spotify clone application is a replica of the Spotify platform, which allows users to listen to their favorite music. This application is built using the React library and Next.js framework, which are tools for building modern web applications. 
 
-## Demo and Video link
+## Demo link
 
-IN PROGRESS
+#### Demo link: https://spotify-psi-ten.vercel.app/
+Login in order to play music.
 
 ## Requirements
 
@@ -52,6 +53,10 @@ or
 ```console
 yarn install
 ```
+
+## Configuration
+
+In order to configure the application, you need to create a database and provide some configuration information, such as API keys and database location.
 
 ## Running
 
