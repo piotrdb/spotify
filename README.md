@@ -5,7 +5,9 @@ This Spotify clone application is a replica of the Spotify platform, which allow
 ## Demo and video link
 
 https://youtu.be/7F-8W6ccbkc
+
 https://spotify-psi-ten.vercel.app/
+
 Login in order to play music.
 
 
