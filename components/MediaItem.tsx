@@ -1,7 +1,8 @@
-import useLoadImage from '@/hooks/useLoadImage';
-import { Song } from '@/types';
-import Image from 'next/image';
-import { twMerge } from 'tailwind-merge';
+import useLoadImage from "@/hooks/useLoadImage";
+import usePlayer from "@/hooks/usePlayer";
+import { Song } from "@/types";
+import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
 interface MediaItemProps {
   song: Song;
@@ -11,23 +12,26 @@ interface MediaItemProps {
 
 const MediaItem: React.FC<MediaItemProps> = ({ song, onClick, className }) => {
   const imageUrl = useLoadImage(song);
+  const player = usePlayer();
 
   const handleClick = () => {
     if (onClick) {
       return onClick(song.id);
     }
+
+    return player.setId(song.id);
   };
 
   return (
     <div
       onClick={handleClick}
       className={twMerge(
-        'flex items-center gap-x-3 cursor-pointer hover:bg-neutral-800/50 w-full p-2 rounded',
+        "flex items-center gap-x-3 cursor-pointer hover:bg-neutral-800/50 w-full p-2 rounded",
         className
       )}
     >
       <div className="relative rounded-md min-h-[48px] min-w-[48px] overflow-hidden">
-        <Image src={imageUrl || '/images/liked.png'} alt="Media Item" fill />
+        <Image src={imageUrl || "/images/liked.png"} alt="Media Item" fill />
       </div>
       <div className="flex flex-col gap-y-1 overflow-hidden">
         <p className="text-white truncate">{song.title}</p>
