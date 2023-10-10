@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Song } from '@/types';
-import SongItem from '../../components/SongItem';
-import useOnPlay from '@/hooks/useOnPlay';
+import { Song } from "@/types";
+import SongItem from "../../../components/SongItem";
+import useOnPlay from "@/hooks/useOnPlay";
 
 type PageContentProps = {
   songs: Song[];
