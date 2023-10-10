@@ -1,15 +1,16 @@
-'use client';
-import { useRouter } from 'next/navigation';
-import { twMerge } from 'tailwind-merge';
-import { RxCaretLeft, RxCaretRight } from 'react-icons/rx';
-import { HiHome } from 'react-icons/hi';
-import { BiSearch } from 'react-icons/bi';
-import Button from './Button';
-import useAuthModal from '@/hooks/useAuthModal';
-import { useSupabaseClient } from '@supabase/auth-helpers-react';
-import { useUser } from '@/hooks/useUser';
-import { FaUserAlt } from 'react-icons/fa';
-import { toast } from 'react-hot-toast';
+"use client";
+import { useRouter } from "next/navigation";
+import { twMerge } from "tailwind-merge";
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
+import { HiHome } from "react-icons/hi";
+import { BiSearch } from "react-icons/bi";
+import Button from "./Button";
+import useAuthModal from "@/hooks/useAuthModal";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import { useUser } from "@/hooks/useUser";
+import { FaUserAlt } from "react-icons/fa";
+import { toast } from "react-hot-toast";
+import usePlayer from "@/hooks/usePlayer";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -21,21 +22,23 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
   const supabaseClient = useSupabaseClient();
   const { user } = useUser();
+  const player = usePlayer();
 
   const handleLogout = async () => {
     const { error } = await supabaseClient.auth.signOut();
+    player.reset();
     router.refresh();
 
     if (error) {
       toast.error(error.message);
     } else {
-      toast.success('Loged out!');
+      toast.success("Loged out!");
     }
   };
 
   return (
     <div
-      className={twMerge(' bg-gradient-to-b from-emerald-800 p-6', className)}
+      className={twMerge(" bg-gradient-to-b from-emerald-800 p-6", className)}
     >
       <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
@@ -67,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                 Logout
               </Button>
               <Button
-                onClick={() => router.push('/account')}
+                onClick={() => router.push("/account")}
                 className="bg-white"
               >
                 <FaUserAlt />
