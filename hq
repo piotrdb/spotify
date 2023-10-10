@@ -1,0 +1,227 @@
+[33mcommit 223abbf6909cdfedc903d43d3d2ddd99e23a76b9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 16:24:44 2023 +0200
+
+    account add
+
+[33mcommit ccf7e17c125538d50de02356be28f90c5b0ccb3a[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 15:39:21 2023 +0200
+
+    check auth on liked click
+
+[33mcommit 3dfb5631dbd6dbdfe4bf80ba27b15edde800bdec[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 15:34:16 2023 +0200
+
+    typo fix
+
+[33mcommit 8977326cffd7d128f2ec64464938db02d0dadee4[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 15:29:57 2023 +0200
+
+    change dirs path
+
+[33mcommit 24c93875d6b8b074b7d01d2b26bbee39331446e4[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 15:21:31 2023 +0200
+
+    reset player on logout
+
+[33mcommit a5d91d5b9fe5123b8fa1d43e8bbf2c463751cbdb[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Oct 10 14:52:34 2023 +0200
+
+    add subscription check
+
+[33mcommit d82e11b7d0a22df1aa7b379614002be962f088a9[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Mon Oct 9 20:02:31 2023 +0200
+
+    add subscribe modal
+
+[33mcommit e716589b57cd49187f0b86472e9300cfb30dd30a[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Mon Oct 9 18:48:19 2023 +0200
+
+    add useSubscribeModal hook
+
+[33mcommit 9e74202ae8c0fa10f1ed98e2b67c206059ce7ce5[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Mon Oct 9 18:47:11 2023 +0200
+
+    add create-checkout-session and portal-link routes
+
+[33mcommit 9088fa389404db2d35855ec6151daa580f3113eb[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Sat Oct 7 20:22:34 2023 +0200
+
+    optional process.env
+
+[33mcommit 7a47f2101e7e055226d00675161a93cda4751e3e[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Sat Oct 7 20:21:33 2023 +0200
+
+    helpers.ts changes
+
+[33mcommit a5449d3c538934ad55b342c3f1f74029465a8081[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Sat Oct 7 19:59:06 2023 +0200
+
+    add route webhook
+
+[33mcommit 65eb5279c4a53842fb1c02109b5d62737664ccca[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Oct 6 18:56:11 2023 +0200
+
+    add lib supabaseAdmin
+
+[33mcommit 7f24a445bd7dfa8fb9d802c2f27a6d5620f619cb[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Oct 6 18:26:28 2023 +0200
+
+    types typo fix
+
+[33mcommit 38e7d5d865b9a60effa35fce9b87ef40ee6fb535[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Oct 6 18:18:44 2023 +0200
+
+    create libs for stripe and helpers
+
+[33mcommit 67e629e8bb97ef1dd29b10601ac74e0f4152fc4f[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Oct 6 17:17:46 2023 +0200
+
+    add custom error and loading
+
+[33mcommit 23c86c196983dd380e128e554b9589e93642c5c3[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Jul 28 00:43:15 2023 +0200
+
+    fix auth modal not popping up on unauth play
+
+[33mcommit a5bbfc16ebc5c4c6270a6d1a588eb9c05c2a5a3b[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Jul 28 00:14:12 2023 +0200
+
+    disable upload for vercel deploy
+
+[33mcommit 580d7f1a7ae53b3a8565fdab16f21947371ac79e[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Thu Jul 27 20:36:39 2023 +0200
+
+    solve player bug, add player functionality everywhere
+
+[33mcommit 7ff9020d164e7443e55c2ad620ccceb2387d7b5e[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Thu Jul 27 20:14:47 2023 +0200
+
+    add music player
+
+[33mcommit 389a04e43718274283f1b44adaae61c8d30dfc80[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Thu Jul 27 19:15:14 2023 +0200
+
+    add hooks for player component
+
+[33mcommit ad7f855e6e600448c833e5483c849123304802b7[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Thu Jul 27 12:32:10 2023 +0200
+
+    add like functionallity and liked songs list
+
+[33mcommit cbc8a6e69ffa0e3e8b9c2f13a7421ae3d43a0a72[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Wed Jul 26 17:53:36 2023 +0200
+
+    add search feature
+
+[33mcommit 10ee1d3ff86e4eb86c079f4140066b9f5f6b2151[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Wed Jul 26 14:57:39 2023 +0200
+
+    add listing user songs in sidebar
+
+[33mcommit e5efa5ae87a89951c48e14aee5dc41ea1e0927af[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Wed Jul 26 14:20:45 2023 +0200
+
+    add song list items with images
+
+[33mcommit 8c8092603d65faa10e94e1fa1dbb4f63521857d4[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Wed Jul 26 13:19:21 2023 +0200
+
+    change upload file css
+
+[33mcommit a700886e36e1342da9ee2d718fe9468213aebf4a[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 25 02:04:44 2023 +0200
+
+    add upload modal with upload functionality
+
+[33mcommit b6a9694bdfd48c11638a39decc4dcbcf25beeddb[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Mon Jul 24 23:55:36 2023 +0200
+
+    add authorized user header display
+
+[33mcommit 6a04d0bae4a3401cc00d424b4f2b113556c95ee5[m
+Author: piotrdb <piotrdb1@gmail.com>
+Date:   Sat Jul 22 18:59:51 2023 +0200
+
+    add auth functionality
+
+[33mcommit e901a1240148db342be39cc3146c2779e27c55db[m
+Author: piotrdb <piotrdb1@gmail.com>
+Date:   Sat Jul 22 18:05:05 2023 +0200
+
+    add reusable modal component
+
+[33mcommit 54f81fa365866db27ce82597a58b16f50b14d248[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 18 18:40:07 2023 +0200
+
+    wrap app with user provider
+
+[33mcommit b8479547e063080b3a4aa9a6caa7316f7ad23570[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 18 18:34:04 2023 +0200
+
+    create hook for user details and his subscription
+
+[33mcommit 50d3e39e8f45d0814249513fedea6eff61995768[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 18 15:40:32 2023 +0200
+
+    add supabase provider and stripe types
+
+[33mcommit 0b983b69e524cc4a280cdf2ad799279c09c9fff4[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 18 15:18:57 2023 +0200
+
+    create ts types from db
+
+[33mcommit 0ec6eb90c9e57aec4eb74f1711232624c4a7c704[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Tue Jul 18 12:18:35 2023 +0200
+
+    initial layout done
+
+[33mcommit a0b72bfb837eb3741790411e88f41b5949291af6[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Sun Jul 16 09:28:29 2023 +0200
+
+    add Header and Button components
+
+[33mcommit 504e2f4757fc970c068994c8268c1c578d1ad555[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Sat Jul 15 03:54:00 2023 +0200
+
+    create Sidebar component
+
+[33mcommit 1a46d89c279ae3342843e3c20cabe73ddb2212e7[m
+Author: Piotr Dębski <piotrdb1@gmail.com>
+Date:   Fri Jul 14 00:51:06 2023 +0200
+
+    init env
